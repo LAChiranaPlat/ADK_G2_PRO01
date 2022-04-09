@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">registroUsuario</string>
+    <string name="btnNew">Registrar Usuario</string>
+    <string name="listUser">Listar Usuarios</string>
+    <string name="exit">Salir</string>
+    <string name="btnCancel">Cancelar</string>
+    <string name="btnSave">Registrar</string>
+    <string name="hintNameUser">Ingrese un Nombre de Usuario</string>
+    <string name="nombresUser">Ingrese sus Nombres</string>
+    <string name="apeUser">Apellidos de Usuario</string>
+    <string name="idUsuario">Numero de Identificación</string>
+    <string name="ayudaTextCuentaUsuario">Ingresar un Alias/Nick para su cuenta</string>
+
+
+    <string name="tituloRegistroUsuarioError">Formulario Vacio</string>
+    <string name="mensajeRegistroUsuarioError">Debe llenar todos los campos</string>
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewUser">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNick"
+        style="@style/LayouttextBox"
+        app:layout_constraintBottom_toTopOf="@+id/tilName"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:endIconMode="clear_text"
+
+        app:helperTextEnabled="true"
+        app:helperText="@string/ayudaTextCuentaUsuario"
+
+        app:counterEnabled="true"
+        app:counterMaxLength="8"
+
+        tools:layout_editor_absoluteX="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/textBox"
+            android:hint="@string/hintNameUser"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilName"
+        style="@style/LayouttextBox"
+        app:layout_constraintBottom_toTopOf="@+id/tilLname"
+        app:layout_constraintTop_toBottomOf="@+id/tilNick"
+        app:endIconMode="clear_text"
+        tools:layout_editor_absoluteX="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/textBox"
+            android:hint="@string/nombresUser"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilLname"
+        style="@style/LayouttextBox"
+        app:layout_constraintBottom_toTopOf="@+id/tilID"
+        app:layout_constraintTop_toBottomOf="@+id/tilName"
+        app:endIconMode="clear_text"
+        tools:layout_editor_absoluteX="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/textBox"
+            android:hint="@string/apeUser"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilID"
+        style="@style/LayouttextBox"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/tilLname"
+        app:endIconMode="clear_text"
+        tools:layout_editor_absoluteX="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/textBox"
+            android:hint="@string/idUsuario"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilID">
+
+        <Button
+            android:id="@+id/btnCancelRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/btnCancel"
+            app:layout_constraintEnd_toStartOf="@+id/btnRegNewUser" />
+
+        <Button
+            android:id="@+id/btnRegNewUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnSave"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/tilNick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/users" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
